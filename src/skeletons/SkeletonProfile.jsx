@@ -1,8 +1,8 @@
-import React from "react";
-import Shimmer from "./Shimmer";
-import SkeletonElement from "./SkeletonElement";
+import React from 'react'
+import Shimmer from './Shimmer'
+import SkeletonElement from './SkeletonElement'
 
-const SkeletonProfile = () => {
+function SkeletonProfile() {
   return (
     <div className="skeleton-wrapper">
       <div className="skeleton-profile">
@@ -17,7 +17,7 @@ const SkeletonProfile = () => {
       </div>
       <Shimmer />
     </div>
-  );
-};
+  )
+}
 
-export default SkeletonProfile;
+export default SkeletonProfile
