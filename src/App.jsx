@@ -1,6 +1,6 @@
-import React from "react";
-import User from "./components/User";
-import Articles from "./components/Articles";
+import React from 'react'
+import User from './components/User'
+import Articles from './components/Articles'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <User />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
