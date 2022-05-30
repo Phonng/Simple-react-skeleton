@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import SkeletonProfile from "../skeletons/SkeletonProfile";
+import React, { useEffect, useState } from 'react'
+import SkeletonProfile from '../skeletons/SkeletonProfile'
 
-const User = () => {
-  const [profile, setProfile] = useState(null);
+function User() {
+  const [profile, setProfile] = useState()
 
   useEffect(() => {
     setTimeout(async () => {
-      const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
-      const data = await res.json();
-      setProfile(data);
-    }, 5000);
-  }, []);
+      const res = await fetch('https://jsonplaceholder.typicode.com/users/1')
+      const data = await res.json()
+      setProfile(data)
+    }, 5000)
+  }, [])
 
   return (
     <div className="user">
@@ -26,7 +26,7 @@ const User = () => {
 
       {!profile && <SkeletonProfile />}
     </div>
-  );
-};
+  )
+}
 
-export default User;
+export default User
