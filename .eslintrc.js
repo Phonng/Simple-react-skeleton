@@ -4,7 +4,13 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: [
+    // "eslint:recommended",
+    'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
+    'plugin:security/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

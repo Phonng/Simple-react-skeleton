@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SkeletonArticle from '../skeletons/SkeletonArticle'
 
 function Articles() {
-  const [articles, setArticles] = useState(null)
+  const [articles, setArticles] = useState()
 
   useEffect(() => {
     setTimeout(async () => {
@@ -16,7 +16,7 @@ function Articles() {
     <div className="articles">
       <h2>All Articles</h2>
 
-      {articles.length &&
+      {articles?.length &&
         articles.map((article) => (
           <div className="article" key={article.id}>
             <h3>{article.title}</h3>
