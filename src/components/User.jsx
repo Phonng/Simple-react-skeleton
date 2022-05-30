@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SkeletonProfile from '../skeletons/SkeletonProfile'
 
 function User() {
-  const [profile, setProfile] = useState(null)
+  const [profile, setProfile] = useState()
 
   useEffect(() => {
     setTimeout(async () => {
